@@ -5,25 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           fontFamily: {
             display: ["Konga"],
+            header: ["azoBold"],
+            body: ["azoRegular"],
           },
         },
       };
     </script>
     <title>Document</title>
   </head>
-  <body class="mx-16 my-8">
-    <nav class="flex w-full">
-      <img class="w-16" src="./images/favicon.png" alt="Bakersland logo" />
-      <h1 class="flex justify-center font-display">Baskersland</h1>
-      <ul class="inline-block align-middle justify-end">
-        <li>Home</li>
-        <li>About</li>
+  <body class="bg-[./images/]">
+    <nav
+      class="p-5 bg-[#F498DA] md:flex md:items-center md:justify-between shadow"
+    >
+      <div class="flex justify-between items-center">
+        <span class="text-2xl text-white font-display">
+          <img
+            class="h-20 mx-5 inline cursor-pointer"
+            src="./images/favicon.png"
+            alt="Bakersland logo"
+          />
+          BAKERSLAND
+        </span>
+
+        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+          <ion-icon name="menu" onclick="menu(this)"></ion-icon>
+        </span>
+      </div>
+
+      <ul
+        class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-[#F498DA] w-full left-0 text-white md:w-auto md:py-0 py-8 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+      >
+        <li class="mx-5 my-6 md:my-0">
+          <a href="#" class="font-header hover:text-[#D67CFC] duration-500"
+            >HOME</a
+          >
+        </li>
+        <li class="mx-5 my-6 md:my-0">
+          <a href="#about" class="font-header hover:text-[#D67CFC] duration-500"
+            >ABOUT</a
+          >
+        </li>
+        <button
+          href="#play"
+          class="font-header text-white bg-[#D67CFC] duration-500 px-6 py-2 mx-5 rounded hover:bg-[#C059EB]"
+        >
+          PLAY NOW
+        </button>
       </ul>
     </nav>
   </body>

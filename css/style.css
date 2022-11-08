@@ -2,3 +2,13 @@
   font-family: "Konga";
   src: url("../fonts/KongaPro.ttf");
 }
+
+@font-face {
+  font-family: "azoBold";
+  src: url("../fonts/AzoSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "azoRegular";
+  src: url("../fonts/AzoSans-Regular.ttf");
+}
