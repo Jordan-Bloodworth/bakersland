@@ -22,12 +22,15 @@
             header: ["azoBold"],
             body: ["azoRegular"],
           },
+          backgroundImage: {
+            "hero-pattern": "url('.images/swirl-background.png')",
+          },
         },
       };
     </script>
-    <title>Document</title>
+    <title>Bakersland</title>
   </head>
-  <body class="bg-[url('./images/swirl-background.png')}">
+  <body class="">
     <nav
       class="p-5 bg-[#F498DA] md:flex md:items-center md:justify-between shadow"
     >
@@ -38,7 +41,7 @@
             src="./images/favicon.png"
             alt="Bakersland logo"
           />
-          BAKERSLAND
+          <a href="#home" id="home">BAKERSLAND</a>
         </span>
 
         <span class="text-3xl cursor-pointer mx-2 md:hidden block">
@@ -54,7 +57,7 @@
         class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-[#F498DA] w-full left-0 text-white md:w-auto md:py-0 py-8 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
       >
         <li class="mx-5 my-6 md:my-0">
-          <a href="#" class="font-header hover:text-[#D67CFC] duration-500"
+          <a href="#home" class="font-header hover:text-[#D67CFC] duration-500"
             >HOME</a
           >
         </li>
@@ -71,6 +74,31 @@
         </button>
       </ul>
     </nav>
+    <div>
+      <div
+        class="fixed z-[-2] bg-[url('./images/swirl-background-new.png')] bg-center bg-cover w-full"
+      >
+        <div class="relative">
+          <img
+            src="./images/castle.png"
+            alt="Slimeantha's castle"
+            class="mt-16 ml-auto mr-auto w-4/5"
+          />
+          <h1
+            class="absolute font-display text-white text-xl bottom-16 left-16"
+          >
+            Bakersland Needs Your Help!
+          </h1>
+          <p
+            class="absolute text-body text-white text-xs left-16 bottom-4 w-2/3"
+          >
+            Slimeantha needs your help to fight off evil King Gum-Gum! Help
+            Slimeantha by gathering her slime army to rescue her fellow slime
+            citizens!
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
   <script src="index.js"></script>
 </html>
