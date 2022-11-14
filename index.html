@@ -27,12 +27,12 @@
     </script>
     <title>Document</title>
   </head>
-  <body class="bg-[./images/]">
+  <body class="bg-[url('./images/swirl-background.png')}">
     <nav
       class="p-5 bg-[#F498DA] md:flex md:items-center md:justify-between shadow"
     >
       <div class="flex justify-between items-center">
-        <span class="text-2xl text-white font-display">
+        <span class="text-3xl text-white font-display">
           <img
             class="h-20 mx-5 inline cursor-pointer"
             src="./images/favicon.png"
@@ -42,7 +42,11 @@
         </span>
 
         <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-          <ion-icon name="menu" onclick="menu(this)"></ion-icon>
+          <ion-icon
+            class="text-white"
+            name="menu"
+            onclick="menu(this)"
+          ></ion-icon>
         </span>
       </div>
 
