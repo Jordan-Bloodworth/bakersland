@@ -100,25 +100,74 @@
             href="#play"
             class="absolute bottom-[0.8vh] left-16 md:bottom-[30px] md:left-60 font-header text-white text-sm md:text-2xl bg-[#D67CFC] duration-500 px-2 py-1 md:px-10 md:py-4 md:mx-5 rounded hover:bg-[#C059EB]"
           >
-            PLAY NOW
+            <a href="#play"> PLAY NOW </a>
           </button>
         </div>
       </div>
     </div>
-    <div class="bg-[url('./images/swirl-background-new.png')] bg-cover">
-      <div class="mt-[50vh] mx-8 p-8 w-3/4 md:mt-[200vh]">
-        <h1 class="text-white font-display text-white text-2xl">
-          Meet Slimeantha
+    <div
+      id="about"
+      class="bg-[url('./images/swirl-background-new.png')] bg-cover"
+    >
+      <div class="mt-[5vh] md:mt-[10vh] mx-8 p-8 md:flex md:mx-32">
+        <div class="mt-auto mb-auto">
+          <h1 class="text-white font-display text-white text-2xl md:text-5xl">
+            Meet Slimeantha
+          </h1>
+          <p class="text-white font-body w-full md:w-2/3 md:text-2xl">
+            Long long time ago in a faraway place there was a kingdom called
+            Bakersland that was ran by a pretty princess named Slimeantha. She
+            loved helping her people everyday but one day an evil king named
+            King Gum-Gum tried to attack her kingdom and now she has to clean up
+            after his mess.
+          </p>
+        </div>
+        <img src="./images/princess.png" alt="" class="w-1/2 ml-auto mr-auto" />
+      </div>
+    </div>
+    <div class="mx-16 mt-16 md:mx-32 md:mt-32">
+      <div>
+        <h1
+          id="play"
+          class="text-center font-display text-[#F498DA] text-2xl md:text-5xl"
+        >
+          Help Slimeantha <br /><br />Defeat Evil King Gum-Gum
         </h1>
-        <p class="text-white font-body">
-          Long long time ago in a faraway place there was a kingdom called
-          Bakersland that was ran by a pretty princess named Slimeantha. She
-          loved helping her people everyday but one day an evil king named King
-          Gum-Gum tried to attack her kingdom and now she has to clean up after
-          his mess.
-        </p>
+        <img
+          src="./images/castleposter.png"
+          alt=""
+          class="flex ml-auto mr-auto mt-8 md:mt-16"
+        />
+      </div>
+    </div>
+    <div>
+      <div class="flex justify-center">
+        <h1
+          class="flex center font-display text-[#F498DA] ml-auto mr-auto text-2xl mt-16 md:text-5xl md:mt-32"
+        >
+          Where to Buy
+        </h1>
+      </div>
+      <div>
+        <a href="https://www.target.com/">
+          <img
+            class="w-32 md:w-64 p-2 ml-auto mr-auto"
+            src="./images/target.png"
+            alt="target logo"
+          />
+        </a>
+        <a href="https://www.walmart.com">
+          <img
+            class="w-32 md:w-64 p-2 ml-auto mr-auto"
+            src="./images/walmart.png"
+            alt="walmart logo"
+          />
+        </a>
       </div>
     </div>
   </body>
+  <footer class="bg-[#F498DA] h-32 mt-16">
+    <p class="flex justify-center align-center text-white">©2022 Bakersland</p>
+  </footer>
   <script src="index.js"></script>
 </html>
